@@ -1,0 +1,120 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-size: 200% 200%;
+    background-image: linear-gradient(45deg, #56ccf2 0%, #8abaf8 33%, #7db0f4 66%, #56ccf2 100%);
+    animation: Gradient 3s ease infinite;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#headerText {
+
+    margin: 0 0 1% 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+#outerInputDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    height: 100vh;
+    transition: max-height 0.7s ease-in-out;
+}
+
+#innerInputDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding: 2%;
+}
+
+#outerInputDiv.top {
+    justify-content: flex-start;
+}
+
+#theInput {
+
+    font-size: large;
+
+    border-radius: 5px;
+    height: 5vh;
+    width: 20vw;
+    padding: 10px;
+    border-color: #0060c0;
+    transition: box-shadow;
+}
+
+#theInput:focus {
+    border:none;
+    box-shadow: 0 0 10px rgba(81, 203, 238, 1);
+}
+
+ul#theList li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    width: 40vw;
+    box-sizing: border-box; 
+}
+
+ul#theList li:hover {
+    background-color: #f0f0f0;
+}
+
+#navBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    padding:0;
+    margin: 0;
+    width: 100vw;
+    height:7vh;
+    background-color: #ADD8E6;
+    border-bottom: 2px solid #aecaca;
+    transition: box-shadow;
+}
+
+.navButton {
+    width: 5vw;
+    border-radius: 0;
+    background-color: #3c98fa;
+    border:none;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.navButton:hover {
+
+    background-color: #ddebfa;
+}
+
+.completeBox {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+}
+
+.completeBox:checked {
+    background-color: #4CAF50;
+}
